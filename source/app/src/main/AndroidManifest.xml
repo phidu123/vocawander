@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="vn.edu.tdtu.vocawander">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/app_icon"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/app_icon_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.VocabWander"
+        android:usesCleartextTraffic="true"
+        tools:targetApi="31">
+        <uses-library android:name="org.apache.http.legacy" android:required="false" />
+        <activity
+            android:name=".activity.ChangePasswordActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.VerifyOTP_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.AccountManagementActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.AddVocab"
+            android:exported="false" />
+        <activity
+            android:name=".activity.FillBlankActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.MultipleChoiceActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.LoginActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="vn.edu.tdtu.vocawander.view.LoginActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.SignUpActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="vn.edu.tdtu.vocawander.view.SignUpActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.FlashCardActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="vn.edu.tdtu.vocawander.view.SignUpActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.HomeActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="vn.edu.tdtu.vocawander.view.HomeActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.SearchActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="vn.edu.tdtu.vocawander.view.SearchActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.VocabularyListActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="vn.edu.tdtu.vocawander.view.VocabularyListActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.NewVocabularyActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="vn.edu.tdtu.vocawander.view.NewVocabularyActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+    </application>
+
+
+
+</manifest>

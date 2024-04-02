@@ -1,0 +1,8 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/edit_topic"
+        android:title="Edit" />
+    <item
+        android:id="@+id/delete_topic"
+        android:title="Delete" />
+</menu>

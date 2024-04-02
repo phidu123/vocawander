@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "407649714360",
+    "project_id": "vocawander-c11a9",
+    "storage_bucket": "vocawander-c11a9.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:407649714360:android:2e77c25f99b6ec7bc6744d",
+        "android_client_info": {
+          "package_name": "vn.edu.tdtu.vocawander"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA4CKEOQJmO5X_FRwtZxO8mlgiwVBL3PKc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

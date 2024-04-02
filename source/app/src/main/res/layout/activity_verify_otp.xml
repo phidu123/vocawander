@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.VerifyOTP_Activity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp">
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:visibility="gone"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_marginBottom="50dp">
+        <ImageView
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:src="@drawable/send_otp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="OTP Verification"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:layout_marginTop="20dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15dp"
+            android:layout_marginTop="10dp"
+            android:text="We sent OTP to your phone number"/>
+        <TextView
+            android:id="@+id/tvPhone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="50dp"
+                android:layout_height="60dp"
+                app:boxStrokeColor="@color/black"
+                android:layout_marginHorizontal="5dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:padding="0dp"
+                    android:id="@+id/etCode1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:textSize="25sp"
+                    android:imeOptions="actionNext"
+                    android:importantForAutofill="auto"
+                    android:inputType="number"
+                    android:maxLength="1"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="50dp"
+                android:layout_height="60dp"
+                app:boxStrokeColor="@color/black"
+                android:layout_marginHorizontal="5dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:padding="0dp"
+                    android:id="@+id/etCode2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:textSize="25sp"
+                    android:imeOptions="actionNext"
+                    android:importantForAutofill="auto"
+                    android:inputType="number"
+                    android:maxLength="1"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="50dp"
+                android:layout_height="60dp"
+                app:boxStrokeColor="@color/black"
+                android:layout_marginHorizontal="5dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:padding="0dp"
+                    android:id="@+id/etCode3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:textSize="25sp"
+                    android:imeOptions="actionNext"
+                    android:importantForAutofill="auto"
+                    android:inputType="number"
+                    android:maxLength="1"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="50dp"
+                android:layout_height="60dp"
+                app:boxStrokeColor="@color/black"
+                android:layout_marginHorizontal="5dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:padding="0dp"
+                    android:id="@+id/etCode4"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:textSize="25sp"
+                    android:imeOptions="actionNext"
+                    android:importantForAutofill="auto"
+                    android:inputType="number"
+                    android:maxLength="1"/>
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="50dp"
+                android:layout_height="60dp"
+                app:boxStrokeColor="@color/black"
+                android:layout_marginHorizontal="5dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:padding="0dp"
+                    android:id="@+id/etCode5"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:textSize="25sp"
+                    android:imeOptions="actionNext"
+                    android:importantForAutofill="auto"
+                    android:inputType="number"
+                    android:maxLength="1"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="50dp"
+                android:layout_height="60dp"
+                app:boxStrokeColor="@color/black"
+                android:layout_marginHorizontal="5dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:padding="0dp"
+                    android:id="@+id/etCode6"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:textSize="25sp"
+                    android:imeOptions="actionNext"
+                    android:importantForAutofill="auto"
+                    android:inputType="number"
+                    android:maxLength="1"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Do not receive the OTP code?"
+                android:textSize="13sp"
+                android:textColor="#777777"/>
+            <TextView
+                android:id="@+id/tvResend"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="RESEND IT"
+                android:layout_marginStart="10dp"
+                android:textStyle="bold"
+                android:textColor="#FF0000"
+                android:textSize="18sp"/>
+        </LinearLayout>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnVerify"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginHorizontal="70dp"
+            android:text="Verify"
+            android:textSize="20sp"
+            app:cornerRadius="10dp"
+            android:backgroundTint="@color/primary"
+            android:layout_marginVertical="25dp"/>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

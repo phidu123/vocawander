@@ -1,0 +1,29 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <EditText
+        android:id="@+id/editWord"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Word" />
+
+    <EditText
+        android:id="@+id/editMeaning"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Meaning" />
+
+    <EditText
+        android:id="@+id/editExample"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Example" />
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>
